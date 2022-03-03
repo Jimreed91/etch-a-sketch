@@ -5,9 +5,7 @@ body{
     padding:0%;
     background-color: rgb(216, 144, 92);
 }
-#wrapper {
-    
-    
+#wrapper {   
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -15,36 +13,51 @@ body{
 }
 
 #header {
+    font-size: larger;
     width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
     min-height: 100px;
     background-color: rgb(158, 154, 150);
+    margin-bottom:20px;
 }
 .blocks{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(224, 127, 7);
+    min-height: 1px;
+    min-width: auto;
     border-color: black;
     border-width: 1px;
-    border-style: dotted;
+    border-style: solid;
+    background-color: rgb(224, 127, 7);   
+    flex:1 1  auto;    
+}
+.b2{
+background-color: black;
+}
+
+button{
+    background-color:rgb(158, 154, 150) ;
+    color:white;
+    font-size: larger;
+    margin-bottom:20px;
 }
 
 #sketch-box {
     background-color: beige;
     display:flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    min-width:80%;
-    min-height:auto
-    
+    align-items: stretch;
+    justify-content:stretch;
+    height: 500px;
+    width:500px;
+    border-style: ridge;
+    border-color:black;
+    border-width: 5px;   
+    flex: 1 1 auto;
 }
 .rows{
     display:flex;
-    
+        flex:1 1 auto;
 }
 
 h1{
